@@ -1,0 +1,115 @@
+﻿<Window
+    x:Class="hw7.AddUserWndw"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:hw7"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="AddUserWndw"
+    Width="400"
+    Height="450"
+    mc:Ignorable="d">
+    <Grid>
+        <Label
+            Width="100"
+            Margin="32,80,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Login" />
+        <Label
+            Width="100"
+            Margin="32,111,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Password" />
+        <Label
+            Width="100"
+            Margin="32,142,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Address" />
+        <Label
+            Width="100"
+            Margin="32,173,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Tel" />
+        <Label
+            Width="100"
+            Margin="32,204,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="IsAdmin (0 or 1)" />
+        <TextBox
+            Name="txtBoxLogin"
+            Width="120"
+            Height="26"
+            Margin="127,80,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text=""
+            TextWrapping="Wrap" />
+        <TextBox
+            x:Name="txtBoxPswrd"
+            Width="120"
+            Height="26"
+            Margin="127,111,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text=""
+            TextWrapping="Wrap" />
+        <TextBox
+            x:Name="txtBoxAddress"
+            Width="120"
+            Height="26"
+            Margin="127,142,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text=""
+            TextWrapping="Wrap" />
+        <TextBox
+            x:Name="txtBoxTel"
+            Width="120"
+            Height="26"
+            Margin="127,173,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text=""
+            TextWrapping="Wrap" />
+        <TextBox
+            x:Name="txtBoxIsAdmin"
+            Width="120"
+            Height="26"
+            Margin="127,204,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text=""
+            TextWrapping="Wrap" />
+        <Label
+            Width="203"
+            Margin="32,25,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="New User"
+            FontSize="30" />
+        <Button
+            Name="btnSubmit"
+            Width="120"
+            Height="35"
+            Margin="127,256,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="btnSubmit_Click"
+            Content="Submit" />
+        <Button
+            Name="btnBack"
+            Width="75"
+            Height="35"
+            Margin="32,256,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="btnBack_Click"
+            Content="Back" />
+
+    </Grid>
+</Window>
