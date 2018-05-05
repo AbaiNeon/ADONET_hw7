@@ -26,9 +26,8 @@ namespace hw7
 
         private void btnSubmit_Click(object sender, RoutedEventArgs e)
         {
-            if (txtBoxLogin.Text == "" || txtBoxPswrd.Text == "" || txtBoxAddress.Text == "" || txtBoxTel.Text == "" || txtBoxIsAdmin.Text == "")
+            if ( !(ValidateRegistration()) )
             {
-                MessageBox.Show("Please, fill the all poles");
                 return;
             }
 
@@ -59,6 +58,16 @@ namespace hw7
             LoginScreenWndw loginScreenWndw = new LoginScreenWndw();
             loginScreenWndw.Show();
             this.Close();
+        }
+
+        private bool ValidateRegistration()
+        {
+            if (txtBoxLogin.Text == "" || txtBoxPswrd.Text == "" || txtBoxAddress.Text == "" || txtBoxTel.Text == "" || txtBoxIsAdmin.Text == "")
+            {
+                MessageBox.Show("Please, fill the all poles");
+                return false;
+            }
+            return true;
         }
 
         private void btnBack_Click(object sender, RoutedEventArgs e)
